@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:15.3-alpine3.18
+    restart: always
+    env_file:
+      - db.env
+    ports:
+      - 5431:5432
+    
